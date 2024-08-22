@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "tbl_users")
-@AllArgsConstructor
+@AllArgsConstructor(staticName = "build")
 @NoArgsConstructor
 @Data
 public class User {
@@ -20,7 +20,7 @@ public class User {
     private int userId;
     private String name;
     private String email;
-    private Long mobile;
+    private String mobile;
     private String gender;
     private int age;
     private String nationality;
